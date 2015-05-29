@@ -1,0 +1,32 @@
+<head>
+    <title>Microscope</title>
+</head>
+<body>
+<div class="container">
+    <header class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Microscope</a>
+        </div>
+    </header>
+    <div id="main">
+      {{> eCommerce}}
+    </div>
+</div>
+</body>
+
+<template name="eCommerce">
+    <div>
+      {{#each address}}
+        {{> sablona}}
+      {{/each}}
+    </div>
+</template>
+
+<template name="sablona">
+        <div class="la">
+            <h3>Dear {{toto}} {{surname}}</h3>
+            <p>Your eCommerce web address will be:</p>
+            <h3>www.{{organisation}}.payfacile.com</h3>
+        </div>
+</template>
+
